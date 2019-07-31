@@ -12,11 +12,8 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.146"
-            app:layout_constraintVertical_bias="0.15"/>
+            android:text="Hello Conrad"
+            tools:layout_editor_absoluteY="408dp" tools:layout_editor_absoluteX="200dp"
+            tools:text="@tools:sample/first_names"/>
 
 </android.support.constraint.ConstraintLayout>

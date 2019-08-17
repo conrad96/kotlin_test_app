@@ -2,39 +2,29 @@ package  com.example.kotlin_test_app
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import android.widget.*
 
-/**
- * A Login Form Example in Kotlin Android
- */
-class MainActivity : AppCompatActivity() {
-
+class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // get reference to all views
-        var et_user_name = findViewById(R.id.et_user_name) as EditText
-        var et_password = findViewById(R.id.et_password) as EditText
-        var btn_reset = findViewById(R.id.btn_reset) as Button
-        var btn_submit = findViewById(R.id.btn_submit) as Button
+        //get reference to views
+        var username = findViewById(R.id.et_user_name) as EditText
+        var password = findViewById(R.id.et_password) as EditText
+        var button_login = findViewById(R.id.btn_submit) as Button
+        var button_reset = findViewById(R.id.btn_reset) as Button
 
-        btn_reset.setOnClickListener {
-            // clearing user_name and password edit text views on reset button click
-            et_user_name.setText("")
-            et_password.setText("")
+        button_reset.setOnClickListener {
+            username.setText("")
+            password.setText("")
         }
-
-        // set on-click listener
-        btn_submit.setOnClickListener {
-            val user_name = et_user_name.text;
-            val password = et_password.text;
-            Toast.makeText(this@MainActivity, user_name, Toast.LENGTH_LONG).show()
-
-            // your code to validate the user_name and password combination
-            // and verify the same
-
+        button_login.setOnClickListener {
+            val _username = username.text
+            val _password = password.text
+            Toast.makeText(this@MainActivity, _password, Toast.LENGTH_LONG).show()
         }
     }
 }

@@ -5,42 +5,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.kotlin_test_app.MainActivity">
-    <linearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="#ADD8E6"
-    android:orientation="vertical"
-    >
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:text="Counter"
-        />
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="0"
-                android:id="@id/counter_val"
-        />
-
-        <linearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        >
-            <button
-            android:id="@id/btn_counter"
-            android:text="+"
+    <TextView
+            android:id="@+id/value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:text="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/plusBtn"
+            app:layout_constraintBottom_toBottomOf="@id/minusBtn"
+            tools:layout_editor_absoluteY="186dp" tools:layout_editor_absoluteX="187dp"/>
 
-        </linearLayout>
+    <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="+"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="629dp" tools:layout_editor_absoluteX="307dp"/>
 
-    </linearLayout>
-
+    <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="-"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="629dp" tools:layout_editor_absoluteX="16dp"/>
 </android.support.constraint.ConstraintLayout>

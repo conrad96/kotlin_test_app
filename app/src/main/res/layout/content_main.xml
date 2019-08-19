@@ -12,9 +12,5 @@
                                                   android:layout_height="match_parent">
 
     </android.support.v7.widget.LinearLayoutCompat>
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="129dp"
-            tools:layout_editor_absoluteX="95dp" android:id="@+id/textView"/>
+
 </android.support.constraint.ConstraintLayout>

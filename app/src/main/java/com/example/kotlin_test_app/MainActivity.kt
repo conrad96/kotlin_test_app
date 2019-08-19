@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //get values from views
-        var counter = 0;
+        var counter = 0
         var counter_text = findViewById(R.id.counter_text) as TextView
         var subtract = findViewById(R.id.minusBtn) as Button
         var add = findViewById(R.id.plusBtn) as Button
